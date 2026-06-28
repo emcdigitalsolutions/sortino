@@ -106,9 +106,9 @@ h2{font-family:var(--f-disp);font-weight:500;font-size:25px;margin:12px 0 14px;c
 .cert .cs{font-size:13px;color:var(--slate);margin-top:4px;line-height:1.4}
 .cert .cm{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:10px}
 .cert .cm span{font-size:11px;font-weight:600;color:var(--blu-2);background:var(--paper);border:1px solid var(--line);padding:4px 9px;border-radius:999px}
-.cert .cert-logo{background:linear-gradient(135deg,#11254f,#15306b);border-radius:12px;padding:13px 16px;display:flex;align-items:center;justify-content:center}
-.cert .cert-logo img{height:34px;width:auto;max-width:100%;display:block}
-.cert.cert-ivass{flex-direction:column;align-items:stretch;gap:13px}
+.cert .cert-logo{background:#eef2f9;border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;align-items:center;justify-content:center;min-height:40px}
+.cert .cert-logo img{height:38px;width:auto;max-width:100%;display:block}
+.cert.has-logo{flex-direction:column;align-items:stretch;gap:13px}
 .certs .note{font-size:12px;color:var(--slate);text-align:center;margin-top:14px}
 
 /* ===== METODO (valori) ===== */
@@ -280,8 +280,8 @@ footer .emc .emc-logo{display:block;flex-shrink:0}
     <h2>Iscrizioni e abilitazioni</h2>
     <div class="list">
 
-      <div class="cert">
-        <span class="seal">OCF<span class="vf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></span>
+      <div class="cert has-logo">
+        <div class="cert-logo"><img src="logo_ocf.png" alt="OCF — Organismo di vigilanza e tenuta dell'Albo Unico dei Consulenti Finanziari" loading="lazy"></div>
         <div class="cd">
           <div class="ct">Albo Unico dei Consulenti Finanziari</div>
           <div class="cs">Consulente finanziario abilitato all'offerta fuori sede.</div>
@@ -289,8 +289,8 @@ footer .emc .emc-logo{display:block;flex-shrink:0}
         </div>
       </div>
 
-      <div class="cert">
-        <span class="seal">OAM<span class="vf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></span>
+      <div class="cert has-logo">
+        <div class="cert-logo"><img src="logo_oam.png" alt="OAM — Organismo Agenti e Mediatori" loading="lazy"></div>
         <div class="cd">
           <div class="ct">Elenco degli Agenti in Attività Finanziaria</div>
           <div class="cs">Iscrizione ai sensi dell'art. 128-quater del D.Lgs. 385/93.</div>
@@ -298,8 +298,8 @@ footer .emc .emc-logo{display:block;flex-shrink:0}
         </div>
       </div>
 
-      <div class="cert cert-ivass">
-        <div class="cert-logo"><img src="marchio-IVASS-white-small.png" alt="IVASS — Istituto per la Vigilanza sulle Assicurazioni" loading="lazy"></div>
+      <div class="cert has-logo">
+        <div class="cert-logo"><img src="marchio-IVASS-navy-small.png" alt="IVASS — Istituto per la Vigilanza sulle Assicurazioni" loading="lazy"></div>
         <div class="cd">
           <div class="ct">Registro Unico degli Intermediari</div>
           <div class="cs">Iscrizione all'Elenco E dell'IVASS, riservato ai collaboratori abilitati a operare nell'attività di intermediazione finanziaria.</div>
