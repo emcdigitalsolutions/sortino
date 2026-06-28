@@ -94,6 +94,20 @@ h2{font-family:var(--f-disp);font-weight:500;font-size:25px;margin:12px 0 14px;c
 .tl h4{font-family:var(--f-disp);font-weight:500;font-size:17px;color:var(--ink);margin:1px 0 4px;line-height:1.15}
 .tl p{font-size:14.5px;color:#3a4360;margin:0}
 
+/* ===== CERTIFICAZIONI ===== */
+.certs .list{display:grid;gap:12px;margin-top:8px}
+.cert{position:relative;display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 8px 24px rgba(21,48,107,.07)}
+.cert .seal{position:relative;width:48px;height:48px;border-radius:13px;flex-shrink:0;display:grid;place-items:center;color:#fff;font-family:var(--f-disp);font-weight:600;font-size:14px;letter-spacing:.03em;background:linear-gradient(135deg,#11254f,#15306b)}
+.cert .seal small{font-size:8.5px;font-weight:600;letter-spacing:.06em;color:var(--cyan);position:absolute;bottom:5px}
+.cert .seal .vf{position:absolute;bottom:-5px;right:-5px;width:19px;height:19px;border-radius:50%;background:#1ebe57;border:2.5px solid #fff;display:grid;place-items:center}
+.cert .seal .vf svg{width:10px;height:10px;color:#fff}
+.cert .cd{min-width:0;flex:1}
+.cert .ct{font-family:var(--f-disp);font-weight:500;font-size:16.5px;color:var(--ink);line-height:1.18}
+.cert .cs{font-size:13px;color:var(--slate);margin-top:4px;line-height:1.4}
+.cert .cm{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:10px}
+.cert .cm span{font-size:11px;font-weight:600;color:var(--blu-2);background:var(--paper);border:1px solid var(--line);padding:4px 9px;border-radius:999px}
+.certs .note{font-size:12px;color:var(--slate);text-align:center;margin-top:14px}
+
 /* ===== CLOSING TAGLINE ===== */
 .closing{position:relative;overflow:hidden;background:linear-gradient(160deg,#0a1838,#15306b 130%);text-align:center;padding:34px 22px;margin-top:14px}
 .closing::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 90% 10%,rgba(227,190,120,.22),transparent 48%)}
@@ -195,6 +209,44 @@ footer .emc:hover{opacity:1}
     <div class="chips">
       <span>Welfare</span><span>Mobilità</span><span>Famiglie</span><span>Imprese</span><span>Consulenza su misura</span>
     </div>
+  </div>
+</section>
+
+<section class="certs" style="padding-top:6px">
+  <div class="wrap">
+    <span class="ey">Trasparenza e affidabilità</span>
+    <h2>Iscrizioni e abilitazioni</h2>
+    <div class="list">
+
+      <div class="cert">
+        <span class="seal">OCF<span class="vf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></span>
+        <div class="cd">
+          <div class="ct">Albo Unico dei Consulenti Finanziari</div>
+          <div class="cs">Consulente finanziario abilitato all'offerta fuori sede.</div>
+          <div class="cm"><span>Matricola 639527</span><span>Delibera n. 2833 · 29/10/2025</span></div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="seal">OAM<span class="vf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></span>
+        <div class="cd">
+          <div class="ct">Elenco degli Agenti in Attività Finanziaria</div>
+          <div class="cs">Iscrizione ai sensi dell'art. 128-quater del D.Lgs. 385/93.</div>
+          <div class="cm"><span>N° iscrizione A17610</span><span>Delibera · 06/08/2025</span></div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="seal" style="font-size:12px">OAM<small>Elenco E</small><span class="vf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></span>
+        <div class="cd">
+          <div class="ct">Collaboratore di Intermediari Finanziari</div>
+          <div class="cs">Iscritto all'Elenco E — collaboratori degli intermediari delle sezioni A, B o D.</div>
+          <div class="cm"><span>N° iscrizione E000784715</span><span>Dal 26/06/2025</span></div>
+        </div>
+      </div>
+
+    </div>
+    <p class="note">Iscrizioni regolarmente attive presso gli organismi di vigilanza OCF e OAM.</p>
   </div>
 </section>
 
