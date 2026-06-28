@@ -108,6 +108,24 @@ h2{font-family:var(--f-disp);font-weight:500;font-size:25px;margin:12px 0 14px;c
 .cert .cm span{font-size:11px;font-weight:600;color:var(--blu-2);background:var(--paper);border:1px solid var(--line);padding:4px 9px;border-radius:999px}
 .certs .note{font-size:12px;color:var(--slate);text-align:center;margin-top:14px}
 
+/* ===== METODO (valori) ===== */
+.method .grid{display:grid;gap:12px;margin-top:8px}
+.method .v{display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 8px 24px rgba(21,48,107,.07)}
+.method .v .ic{width:44px;height:44px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#11254f,#15306b)}
+.method .v .ic svg{width:21px;height:21px}
+.method .v h4{font-family:var(--f-disp);font-weight:500;font-size:16.5px;color:var(--ink);line-height:1.18}
+.method .v p{font-size:13.5px;color:#3a4360;margin-top:3px;line-height:1.45}
+
+/* ===== COSA MI DISTINGUE ===== */
+.edge .list{display:grid;gap:12px;margin-top:10px}
+.edge .it{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:#3a4360;line-height:1.45}
+.edge .it .ck{width:24px;height:24px;border-radius:50%;flex-shrink:0;background:rgba(30,190,87,.13);display:grid;place-items:center;color:#1ebe57;margin-top:1px}
+.edge .it .ck svg{width:13px;height:13px}
+.edge .it b{color:var(--ink);font-weight:600}
+.edge .langlab{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-top:20px}
+.edge .langs{display:flex;flex-wrap:wrap;gap:9px;margin-top:9px}
+.edge .langs span{font-size:13px;font-weight:600;color:var(--blu-2);background:#fff;border:1px solid var(--line);padding:8px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(21,48,107,.06)}
+
 /* ===== CLOSING TAGLINE ===== */
 .closing{position:relative;overflow:hidden;background:linear-gradient(160deg,#0a1838,#15306b 130%);text-align:center;padding:34px 22px;margin-top:14px}
 .closing::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 90% 10%,rgba(227,190,120,.22),transparent 48%)}
@@ -212,6 +230,43 @@ footer .emc:hover{opacity:1}
     <div class="chips">
       <span>Welfare</span><span>Previdenza</span><span>Risparmio e investimenti</span><span>Protezione assicurativa</span><span>Credito e finanziamenti</span><span>Mobilità</span><span>Famiglie</span><span>Imprese</span>
     </div>
+  </div>
+</section>
+
+<section class="method" style="padding-top:6px">
+  <div class="wrap">
+    <span class="ey">Il mio approccio</span>
+    <h2>Il mio metodo</h2>
+    <div class="grid">
+      <div class="v">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></svg></span>
+        <div><h4>Ascolto, prima di tutto</h4><p>Parto sempre dalle tue esigenze reali e dai tuoi obiettivi, prima di ogni soluzione.</p></div>
+      </div>
+      <div class="v">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></svg></span>
+        <div><h4>Scelte concrete e consapevoli</h4><p>Un metodo pratico e su misura, per decisioni chiare e sostenibili nel tempo.</p></div>
+      </div>
+      <div class="v">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></span>
+        <div><h4>Una relazione che dura</h4><p>Ti accompagno passo dopo passo, con fiducia e trasparenza, anche dopo la scelta.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edge" style="padding-top:6px">
+  <div class="wrap">
+    <span class="ey">Perché scegliermi</span>
+    <h2>Cosa mi distingue</h2>
+    <div class="list">
+      <div class="it"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Oltre <b>35 anni di carriera</b> in Poste Italiane, di cui <b>25+ come consulente</b> per famiglie e imprese.</span></div>
+      <div class="it"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Esperienza da <b>Direttore di ufficio postale</b>, nella guida del team e nella gestione quotidiana.</span></div>
+      <div class="it"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Formatore</b> di consulenti e specialisti, con un metodo costruito sul campo.</span></div>
+      <div class="it"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Formazione continua e certificata</b> su normativa finanziaria europea (MiFID II), assicurativa (IVASS), antiriciclaggio e sostenibilità (ESG).</span></div>
+      <div class="it"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Vicinanza al territorio</b>, con impegno anche in attività sociali e di valorizzazione locale.</span></div>
+    </div>
+    <div class="langlab">Lingue</div>
+    <div class="langs"><span>Italiano</span><span>Inglese</span><span>Francese</span></div>
   </div>
 </section>
 
